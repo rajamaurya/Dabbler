@@ -10,7 +10,7 @@ and open the template in the editor.
 
 
 #body{
-	
+	position:relative;
 	height:100%;
 	width:100%;
 	background:white;
@@ -158,7 +158,7 @@ t1 {
 	border-color:inherit;
 }
 #tabLoc{
-	
+	display: inline-block;
 	 
 }
 #savetext{
@@ -322,4 +322,25 @@ text-indent: 4px;
 .yeaClass{
 	padding-left:4pt;
 }
+.load-gif {
+	position: absolute;
+	width:100%;
+	height:100%;
+	background: #fff;
+	left: 0;
+	top: 0;
+}
+.load-gif img {
+	position: absolute;
+	max-width: 100%;
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
 
