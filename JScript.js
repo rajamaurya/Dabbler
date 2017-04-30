@@ -15,8 +15,14 @@
    
    function searchIt()
    {
+   jQuery('.load-gif').css('display', 'block');
+   h_adjust();
+  // h_fix();
   //var getHidden =  document.getElementById("hideMe");
     //$("#hideMe").fadeOut();
+    $('.January, .Febuary, .July, .December').hide();
+		h_fix();
+		
    
      var images_names = [];
  	var cname= [];
@@ -104,6 +110,7 @@ function getSearchedChoice(flagm,flagy,flagc,flagconti,m,y,c,conti){
         flagm = true;
         //started thinking here---
       				  $('.January, .Febuary, .July, .December').hide();
+      				  h_fix();
        		     //   $(".hideMe").fadeOut("slow");
        		
         				if(y!=0 && c==0 && conti==0)
@@ -118,7 +125,9 @@ function getSearchedChoice(flagm,flagy,flagc,flagconti,m,y,c,conti){
         						scrollTop: $('#'+my).offset().top
         						},500);
         					});
+        					h_adjust();
         					$('#'+ my).show();
+        					h_adjust();
         					}
         					else{
 						 		 alert("Oops! Not Available.."); 
@@ -370,10 +379,10 @@ function getSearchedChoice(flagm,flagy,flagc,flagconti,m,y,c,conti){
 		//completing rhe task----
 		if($('.' + m).length!=0){ 
 		var n = !m;
-			var  delayLoading = function(){
-			alert("Loading...");
-			}
-			delayLoading();
+		//	var  delayLoading = function(){
+			//alert("Loading...");
+		//	}
+		//	delayLoading();
             switch(m)
          	{
          			
@@ -510,6 +519,7 @@ function getSearchedChoice(flagm,flagy,flagc,flagconti,m,y,c,conti){
             flagy=true;
             ///-------------------------------------------------------------------------
             $('.2015, .2016, .2017').hide();
+            h_fix();
             //started thinking here---
        			//if(m!=0 || c!=0)
         	//	{
@@ -689,6 +699,7 @@ function getSearchedChoice(flagm,flagy,flagc,flagconti,m,y,c,conti){
 							},500);
 				});
 				$('.'+y).show();
+			//	h_fix();
 				
 					break;
 					
@@ -1234,7 +1245,7 @@ default:
     									 								   borderWidth: "6pt",
     									 								  // transition: "transform .7s ease",
     									 
-    									 									},800); 
+    									 									},800).css({'border' : '1px solid #2C81B2', 'padding' : '3px'}); 
     							         								i++;
     							         							  }
           														//	 $("#"+r).css('zIndex', '10'); 	  
@@ -1896,6 +1907,7 @@ function callNotSelectedImg(img){
         	 		var myc = m + y + c;
         	 			if($("#" + my).length!=0){
         	 			//CallCountry(setColToBol);
+        	 			h_fix();
         	 								$('#'+my).toggle(500, function(){
         	 			//CallCountry(setColToBol);
         	 								$('html, body').animate({scrollTop: $('#'+my).offset().top},800);
@@ -2065,6 +2077,55 @@ function Get_All_Divs_Ids(conti)
 			return GetClassFlag;
 
 }
+
+
+function h_fix() {	
+	
+	var h1 = jQuery('#d1').height();
+	var h2 = $('#tabLoc').height();
+	//console.log(h1);
+//	console.log(h2);
+		if(h1>h2) {
+		var diff = h1 - h2;
+		alert(diff);
+		jQuery('tr#r1').next('tr').css('margin-top', -diff);
+	}
+}
+
+function h_adjust() {
+	jQuery('body').css({
+		'opacity' : 0,
+		 '-webkit-transition' : 'all 0.1s ease',
+		 '-moz-transition' : 'all 0.1s ease',
+		 '-o-transition' : 'all 0.1s ease',
+		 '-ms-transition' : 'all 0.1s ease', 
+		 'transition' : 'all 0.1s ease'
+	});
+	/*  */
+	setTimeout(function(){
+	
+		if(jQuery('#January2017').css('display') == 'block') {
+			
+			jQuery('#r1').next('tr').css('margin-top', '0px' );
+			
+
+		}
+		
+		jQuery('body').css({
+				'opacity' : 1,
+			/*	 '-webkit-transition' : 'all 0.3s ease',
+				 '-moz-transition' : 'all 0.3s ease',
+				 '-o-transition' : 'all 0.3s ease',
+				 '-ms-transition' : 'all 0.3s ease', 
+				 'transition' : 'all 0.3s ease' */
+			});
+			
+		jQuery('.load-gif').css('display', 'none');
+
+	}, 1000);
+
+};	
+	
 
 
 
