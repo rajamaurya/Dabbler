@@ -1,0 +1,2870 @@
+<!Site InfoTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!Site InfoTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=11.0.41">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>WPS Photo Repository</title>
+   
+   
+   
+   <link href="/photo_Rep/PhotStyle1.css" rel="stylesheet" type="text/css" media="screen">
+   <!--<link href="/photo_Rep/stylesheet.css" rel="stylesheet" type="text/css" media="(max-device-width: 480px)"> -->
+   <link href="/photo_Rep/max-640px.css" rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)">
+   <script language="javascript" src="/photo_Rep/script.js" type="text/jscript"></script>
+   <!--<script language="javascript" src="/photo_Rep/s2.js" type="text/jscript"></script>-->
+  <!-- <script language="javascript" src="/photo_Rep/Index_Js_File.js" type="text/jscript"></script>-->
+   <script language="javascript" src="/photo_Rep/GoogleeJs.js" type="text/jscript"></script>
+ <!--  <link rel="stylesheet" media="screen and (orientation: landscape)" href="/photo_Rep/landscape.css"> -->
+   <script type= "text/javascript" src = "/photo_Rep/state_country.js"></script> 	
+	<!--<script language="javascript" src="/photo_Rep/PhotJScript.js" type="text/jscript"></script> -->
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="AgiCss.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script>  function EnableSite(){
+    
+						    $(document).ready(function(){
+						    $("#con").prop("disabled", false);  
+							});
+  
+
+   // Site Infoument.getElementById('i').disabled=false;
+    }</script>
+   <style tyle=text/css>
+ optgroup {background-color:lightblue; font-size: 10px; color:#666666}
+ option {background-color:white; color:#808080;}
+  </style>
+   <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      height: 20px;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+        margin-top: 24px;
+      padding-top: 6px;
+      background-color: #000;
+      height: 100%;
+    }
+             		
+	#DropdownArea{
+		width:210px;
+	        border-color:lightblue;
+        background:white;
+        background-color:#FFFFFF;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);		
+	
+}
+div.imageTable{
+	  border-color:#FFFFFF;
+        background:#FFFFFF;
+        background-color:#FFFFFF;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.image:hover{
+	
+	border: 1px solid #6699FF;
+}
+div#DropdownArea:hover{
+	border: 1px solid #6699FF;
+}
+#datetime {
+	position: absolute;
+	right: 40px;
+	top: 15px;
+	font-size: 12px;
+	color: #777;
+	padding-bottom:20px;
+	padding-top:0px;
+	}
+
+    /* Set black background color, white text and some padding */
+        .active a {
+
+   color:#3366FF;
+
+}
+    /* On small screens, set height to 'auto' for sidenav and grid */
+   
+      .sidenav:active{
+	color:blue;
+	top: 2px;
+  outline: none;
+  }
+		.sidenav:hover{
+	
+	color:#9999FF;
+}
+#datetime:active{
+		color:blue;
+	top: 2px;
+  outline: none;
+
+}
+#datetime:hover{
+	color:green;
+}
+.navbar navbar-default:active{
+	color:blue;
+	top: 2px;
+  outline: none;
+
+}
+.navbar navbar-default:hover{
+	color:#9999FF;
+}
+      .row.content {height:auto;} 
+    }
+  </style>
+
+    
+	</head>
+
+<body  onload=datetime() text="#000000" alink="#cc6699" vlink="#7e417f">
+  <!-- Updating here ----------------------------------------->
+  
+  <nav class="navbar navbar-default">
+   <div class="container-fluid">
+  				<div class="navbar-header">
+        <a class="navbar-brand" href="#"> <img src="images/agilentlogo4.gif" alt="logo" width="327" height="45"></a>
+    </div><br><br>
+    <div class="sidenav">
+    			
+        		<nav class="navbar navbar-default">
+  			   <div class="container-fluid">
+
+        <a class="navbar-brand" href="http://wps.service.agilent.com:81">WPS Home</a>
+        <a class="navbar-brand" href="http://wps.service.agilent.com:81/photo_Rep/rep.htm">Agilent Photo Gallary</a>
+       <div class="active" onmouseover="Animation"> <a class="navbar-brand" href="#WPSgallary">WPS Photo Gallary</a></div>
+       <div class="navbar-brand" id="datetime">
+				<span class="active" id="clock"></span>
+		</div>
+        		</div>
+        		</nav>
+        		
+    </div> 
+    </div>
+    </nav><br><br><br>
+    <div class="container">
+    <div class="col-sm-12 text-center" style="padding-top:20px; left: 110px; top: 0px;">
+    
+                                         <p><b>Photo Gallery</b></p>
+					<strong>
+					
+					To download an image right click on the format and 
+						select &quot;Save Picture as&quot;.
+					
+					</strong><br>
+                                               
+			<!--		<div id="loading">
+ 						  <img id="loading-image" src="http://cdn.nirmaltv.com/images/generatorphp-thumb.gif" alt="Loading..." >
+					</div>  -->
+					<strong>
+					<a href="http://wps.service.agilent.com:81/photo_Rep/Doc_Folder/GlostrupZip.zip">
+					To download the complete set of rectangular images in Hi-res 
+					JPEG format (2.14MB total size) <br>
+					&quot;click here.&quot; </a></strong>
+                        
+                        
+                </div>	
+                
+              	<div id="contentDiv">
+                    <!-- be careful while going ahead -->
+                    <div id="DropDownArea">
+                    <div id="tableDiv" style="width:210px;">
+						<table id="t2" class="table1" width="210px" border="0" cellpadding="2" cellspacing="2">
+							<tbody id="tbodyClass">
+								
+   				<!--	&nbsp&nbsp&nbsp&nbsp<tr id="link1"><a href="#tab1"><span style="color:white; font-size:10pt">January 25, 2017</span></a></tr></br>
+					&nbsp&nbsp&nbsp&nbsp<tr id="link2"> <a href="#tab2"><span style="color:white; font-size:10pt">December 25, 2016</span></a></tr></br>
+				    &nbsp&nbsp&nbsp&nbsp<tr><a href="#"><span style="color:white; font-size:10pt">Link3</span></a></tr></br> -->
+				    
+				    
+				    			
+								<tr>
+									<td>
+									<label class="dp" for="mon" style="font-size:12pt; color:#00061a">
+									Month</label> &nbsp;&nbsp;&nbsp;<select id="mon" name="mon">
+									<option value="0">--select--</option>
+									<option value="January">January</option>
+									<option value="Febuary">Febuary</option>
+									<option value="March">March</option>
+									<option value="April">April</option>
+									<option value="May">May</option>
+									<option value="June">June</option>
+									<option value="July">July</option>
+									<option value="August">August</option>
+									<option value="September">September</option>
+									<option value="October">October</option>
+									<option value="November">November</option>
+									<option value="December">December</option>
+									</select></td> 
+								</tr>
+								<tr><td></td></tr>
+																<tr>
+									<td>
+									<label class="dp"  for="year" style="font-size:12pt; color:#00061a">
+									Year</label>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+									<select class="yeaClass" id="yea" name="D1">
+									<option value="0">--select--</option>
+									<option value="2014">2014</option>
+									<option value="2015">2015</option>
+									<option value="2016">2016</option>
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									</select> </td>
+								</tr>
+								<tr><td></td></tr>
+									<tr>
+									<td>
+									<label class="dp"  for="conti" style="font-size:12pt; color:#00061a">
+									Country</label>
+									<select id="conti" onclick="EnableSite()" onchange="getStates( 'con', this.selectedIndex);" style="font-size:10pt; height:24pt; text-align:center" name="D3">
+									</select> 
+									
+									
+									
+								 </td>
+								</tr><tr><td></td></tr>
+									<tr>
+									<td id="i" >
+									<label id="conDiv" class="isDisabled" for="con" style="font-size:12pt; color:#003366">
+									Site</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<select class="isDisabled" id="con" style="font-size:10pt; height:24pt; text-align:center" name="D2" disabled>
+									
+									</select>
+									<script language="javascript">getCountries("conti");</script> 
+			                        </td>
+								</tr>
+								<tr><td></td></tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr>
+									<td>
+									<div class="dp"  id="sButton">
+										<input type="image" src="photo_Rep/../../images/btn-search.gif" alt="search" id="next" height="24" width="55" border="1" onclick="searchIt()">
+									</div>
+									</td>
+                                                                </tr> 
+                                                        </tbody>
+						</table>
+					</div>
+		<!--------------------------Training Div Construction ------------------------->
+		
+					<div id="tableDiv2" style="width:210px;">
+						<div id="tableHeader" style="width:210px;">
+							&nbsp;&nbsp;&nbsp;<span style="color:white; font-size:10pt"><b>Quick 
+							Links</b></span> </div>
+						<table  width="style=210px;" border="0" cellpadding="0" cellspacing="0">
+							<tbody id="tbodyClass0">
+								
+								<tr>
+									<td><a href="#">
+									<span style="font-size:10pt">Link1</span></a></td>
+                                                                </tr> </tbody>
+														</table>
+					</div>
+
+		<div id="tableDiv3" style="width:210px;">
+						<div id="tableHeader" style="width:210px;">
+							&nbsp;&nbsp;&nbsp;<span style="color:white; font-size:10pt"><b>Contacts</b></span>
+						</div>
+						<table width="210px" border="0" cellpadding="0" cellspacing="0">
+							<tbody id="tbodyClass1">
+								
+								<tr>
+									<td><a href="#">
+									<span style="font-size:10pt">Link1</span></a></td>
+                                                                </tr></tbody>
+														</table>
+					</div>
+                </div> <!-------container -->
+                    <!--.....................................................................................next job -->
+                    
+                    
+                    <!-- Create gallery text region here.................................. --->
+                <!--    <div class="container"  style="width:560px;height:auto;"> -->
+                    <div class="MyGallryDiv">
+			<table id="t1" class="t" bgcolor="#FFFFFF" cellpadding="4" cellspacing="4">
+				<tr id="r1" valign="top" cellpadding="4" cellspacing="4">
+					<!--<td id="d1" valign="top"style="height:auto;">&nbsp;
+					
+					
+					</td> -->
+		<!-------------------------------------------------------------------------->
+
+		
+		
+			
+   					<td valign="top" class="hideMe" id="tabLoc">
+                                         <!--   <tr id="GalleryID" style="width: 500px;"><td>
+					<!--<p><b>Photo Gallery</b></p>
+					<strong>
+					<div>
+						<p>To download an image right click on the format and 
+						select &quot;Save Picture as&quot;.</p>
+					</div>
+					</strong><br>
+                                               
+			<!--		<div id="loading">
+ 						  <img id="loading-image" src="http://cdn.nirmaltv.com/images/generatorphp-thumb.gif" alt="Loading..." >
+					</div>  -->
+					<!--<strong>
+					<a href="http://wps.service.agilent.com:81/photo_Rep/Site Info_Folder/GlostrupZip.zip">
+					To download the complete set of rectangular ../images in Hi-Res-Pic 
+					JPEG format (2.14MB total size) <br>
+					&quot;click here.&quot; </a></strong> -
+                                             </td>
+                                            </tr>-->
+                                            <tr  class="2017" id="JanDiv" style="height:auto;display:block;">
+                                            <td>
+					<table border="0" class="January" id="January2017" style="display:block;" data-month="January" data-year="2016" data-country="Brazil">
+						<tbody class="January2017Boulder" id="JanuaryBoulder">
+							<tr>
+								<td class="2017Boulder"  colspan="5" center="" border="0" style="height: 31px">
+								<center style="font-size:large; text-align:center;">January 25, 2017</center>
+								</td>
+							</tr>
+						<!--	<div class="overlay" style="display:block">
+   								 <div class="ig"><img src="../images/'.'+this.id" style="display:none;" id="myId"></div>
+  							</div> -->
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center"  style="border-width:1; border-color:gray">
+								<br><div  class="image" data-imageId="0"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Boulder1" class="Boulder" src="images/Boulder.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table  width="160">
+									<tr class="Boulder">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boulder <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="descrip" style="font-size:8pt"><a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.doc" style="font-size:10pt">Site Info</a>
+										(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="descrip" style="font-size:8pt"><a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Boulder.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> </span>
+										<span>(225KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image" data-imageId="1">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="LittleFalls1" class="LittleFalls"  src="images/LittleFalls.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table  width="160">
+									<tr class="LittleFalls">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Little Falls <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/LittleFalls.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(230KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image" data-imageId="2"><div class="Austria">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Vienna1" class="Vienna" src="images/Vienna.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table  width="160">
+									<tr class="Vienna">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Austria <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vienna <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Vienna.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(142KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image" data-imageId="3"><div class="Singapore">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Singapore1" class="Singapore" src="images/Singapore.jpg" alt="pic4" width="115" height="80">
+								</center><br>
+								<table  width="160">
+									<tr  class="Singapore">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Singapore <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Singapore.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(79.2KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image" data-imageId="4"><div class="Brazil">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="SauPaulo1" class="SauPaulo" src="images/SauPaulo.jpg" alt="01_dv512033" width="115" height="80">
+								</center> <br>
+								<table  width="160">
+									<tr class="SauPaulo">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Brazil <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sau Paulo <br>
+
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Brazil.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(41.8KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US" data-imageId="5">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Folsom1" class="Folsom" src="images/Folsom.jpg" alt="01_dv512033-C.jpg" width="115" height="80">
+								</center><br>
+								<table  width="160">
+									<tr class="Folsom">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US <br>
+
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Folsom <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Folsom.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(219KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image" data-imageId="6"><div class="Mexico">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="MexicoCity1" class="MexicoCity" src="images/MexicoCity.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table  width="160">
+									<tr class="MexicoCity">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mexico <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mexico City<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Mexico.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(136KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US" data-imageId="7">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="SantaClara1" class="SantaClara" src="images/SantaClara.jpg" alt="02_AG000372-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160" >
+									<tr class="SantaClara">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US <br>
+
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Santa Clara <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/SantaClara.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(62.4KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+                                 </td></tr>
+					</td>
+                
+				</tr>
+				<!-- First Row of T1 Table End -->
+				<!---------------------------------------Newly added table January   ------------------------------------------>
+				<tr><td></td></tr>
+			<tr class="2016" style="display: block; float: left; margin-top: 0px;">
+			<td style="width: 39px">
+					<table border="0" class="January" id="January2016" style="display:block;">
+						<tbody class="January2016Boulder" id="JanuaryBoulder">
+							<tr>
+								<td colspan="5" border="0" style="height: 30px">
+								<center style="font-size:large">January 25, 
+								2016</center></td>
+							</tr>
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Israel">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="AzorimPark1" class="AzorimPark" src="images/AzorimPark.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="AzorimPark">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Israel<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Azorim <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Azorim.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div   class="image"><div class="Thailand">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Bangkok1" class="Bangkok" src="images/Bangkok.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Bangkok">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thailand <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bangkok <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Bangkok.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Bangkok.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Spain">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Barcelona1" class="Barcelona" src="images/Barcelona.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr  class="Barcelona">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spain <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Barcelona <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Barcelona.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Switzerland">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Basel1" class="Basel" src="images/Basel.jpg" alt="pic4" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Basel">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Switzerland <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Basel  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Basel.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Beijing1" class="Beijing" src="images/Beijing.jpg" alt="01_dv512033" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Beijing">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; China <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Beijing <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Beijing.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Bengaluru1" class="Bengaluru" src="images/Bengaluru.jpg" alt="01_dv512033-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Bengaluru">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bengaluru <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Bengaluru.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="UnitedKingdom">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Bracknell1" class="Bracknell" src="images/Bracknell.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Bracknell">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; United Kingdom <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bracknell <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Bracknell.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Canada">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Mississauga1" class="Mississauga"  src="images/Mississauga.jpg" alt="02_AG000372-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Mississauga">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Canada<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mississauga <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Mississauga.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+
+
+
+			</tr>				
+				<tr><td></td></tr>
+				<!---------------------------------------------------------------------------------------------------------->
+   <!------------------------------------------Table 2------------------------------------------------------------->
+      			<tr class="2016" style="display:block;">
+					<td style="width: 34px">
+					<table border="0" class="December" id="December2016" style="display:block;">
+						<tbody class="December2016Boulder" id="DecemberBoulder">
+							<tr>
+								<td colspan="5" border="0">
+								<center style="font-size:large">December 25, 
+								2016</center></td>
+							</tr>
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Texas">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="CedarCreek1" class="CedarCreek" src="images/CedarCreek.jpg" alt="pic1" width="115" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="CedarCreek">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Texas <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cedar Creek <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/CedarCreek.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Chandigarh1" class="Chandigarh" src="images/Chandigarh.jpg" alt="pic1" width="110" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Chandigarh">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chandigarh <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Chandigarh.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="United Kingdom">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Cheadle1" class="Cheadle" src="images/Cheadle.jpg" alt="pic3" width="110" height="80">
+								</center><br>
+								<table width="160">
+									<tr  class="Cheadle">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; United Kingdom <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cheadle <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Cheadle.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+								</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Chengdu1" class="Chengdu" src="images/Chengdu.jpg" alt="pic4" width="110" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="Chengdu">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; China  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chengdu<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Chengdu.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr class="2016">
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Chennai1" class="Chennai" src="images/Chennai.jpg" alt="01_dv512033" width="110" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="Chennai">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chennai <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Chennai.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Chongqing1" class="Chongqing" src="images/Chongqing.jpg" alt="01_dv512033-C.jpg" width="110" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Chongqing">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; China<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chongqing <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Chongqing.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Chungli1" class="Chungli" src="images/Chungli.jpg" alt="pic3" width="110" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Chungli">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; China<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chungli<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Chungli.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div   class="image"><div class="United Kingdom">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="ChurchStretton1" class="ChurchStretton"  src="images/ChurchStretton.jpg" alt="02_AG000372-C.jpg" width="110" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="ChurchStretton">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; United Kingdom<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Church Stretton <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.doc" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/ChurchStretton.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div> </div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+				</tr>
+				<tr><td></td></tr>
+   <!--
+	</tbody>
+	
+	<!--</table> 
+	</tr>
+  
+   <!----added-->
+   <!------------------------------------------------------------------------------------------------------------->
+   <!-------------------------------------------Table3------------------------------------------------------------>
+   				<tr class="2015" style="display:block">
+					<td style="width: 34px">
+					<table border="0" class="November" id="November2015" style="display:block;">
+						<tbody class="November2015Boulder" id="NovemberBoulder">
+							<tr>
+								<td colspan="5" center="" border="0">
+								<center style="font-size:large">November 25, 2015</center>
+								</td>
+							</tr>
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Ireland">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Cork1" class="Cork" src="images/Cork.jpg" alt="pic1" width="110" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="Cork">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ireland <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cork <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Cork.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="UnitedKingdom">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="CravenAmrs1" class="CravenAmrs" src="images/CravenAmrs.jpg" alt="pic1" width="110" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="CravenAmrs">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; United Kingdom <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Craven Amrs <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/CravenAmrs.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Korea">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Daejeon1" class="Daejeon" src="images/Daejeon.jpg" alt="pic3" width="110" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="Daejeon">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Korea<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Daejeon <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Daejeon.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Danbury1" class="Danbury" src="images/Danbury.jpg" alt="pic4" width="110" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="Danbury">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Danbury <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Danbury.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Delhi1" class="Delhi" src="images/Delhi.jpg" alt="01_dv512033" width="110" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="Delhi">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Delhi <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Delhi.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Belgium">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Diegem1" class="Diegem" src="images/Diegem.jpg" alt="01_dv512033-C.jpg" width="110" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Diegem">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Belgium <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Diegem <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Diegem.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"> <div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Englewood1" class="Englewood" src="images/Englewood.jpg" alt="pic3" width="110" height="80"style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="Englewood">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Englewood <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Englewood.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="UnitedKingdom">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Edinburgh1" class="Edinburgh" src="images/Edinburgh.jpg" alt="02_AG000372-C.jpg" width="110" height="80" style="position:relative">
+								</center><br>
+								<table width="160">
+									<tr class="Edinburgh">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;United Kingdom <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Edinburgh <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Edinburgh.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+				</tr>
+				<tr><td></td></tr>
+   
+	<!--</tbody>
+	
+	</table>
+ </tr>
+   
+   <!-------------------------------------------End of Table3----------------------------------------------------->
+   <!------------------------------------------Table 4----------------------------------------------------------->
+   
+   				<tr class="2017" style="display:block;">
+					<td style="width: 39px">
+					<table border="0" class="December" id="December2017" style="display:block;">
+						<tbody class="December2017Boulder" id="DecemberBoulder0">
+							<tr><!-- class="2017"-->
+								<td colspan="5"><center style="font-size:large">
+								December 25, 2017</center></td>
+							</tr>
+						<!--<tr class="2017"></tr>-->
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Germany">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Frankfurt1"  class="Frankfurt" src="images/Frankfurt.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Frankfurt">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Germany<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Frankfurt <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Frankfurt.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Denmark">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Glostrup1" class="Glostrup" src="images/Glostrup.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Glostrup">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Denmark <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Glostrup <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Glostrup.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div   class="image"><div class="Malaysia">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="KualaLumpur1" class="KualaLumpur" src="images/KualaLumpur.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="KualaLumpur">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malaysia <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kuala Lumpur <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/KualaLumpur.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Guangzhou1" class="Guangzhou" src="images/Guangzhou.jpg" alt="pic4" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Guangzhou">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; China<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guangzhou <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Guangzhou.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Japan">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Hachioji1" class="Hachioji" src="images/Hachioji.jpg" alt="01_dv512033" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Hachioji">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japan <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hachioji <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Hachioji.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Hangzhou1" class="Hangzhou" src="images/Hangzhou.jpg" alt="01_dv512033-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Hangzhou">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; China <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hangzhou <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Hangzhou.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Spain">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Madrid1" class="Madrid" src="images/Madrid.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Madrid">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spain <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Madrid<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Madrid.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Hyderabad1" class="Hyderabad"  src="images/Hyderabad.jpg" alt="02_AG000372-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Hyderabad">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hyderabad<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Hyderabad.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+				</tr>
+<tr><td></td></tr>
+   
+   <!---------------------------------------End of  Table 5----------------------------------------------------->
+   <!----------------------------------------End of Table 4------------------------------------------------------>
+   	<tr class="2017" style="display:block;">
+					<td style="width: 39px">
+					<table border="0" class="November" id="November2017" style="display:block;">
+						<tbody class="December2017Boulder" id="DecemberBoulder0">
+							<tr class="2017"><!-- class="2017"-->
+								<td colspan="5"><center style="font-size:large">
+								November 25, 2017</center></td>
+							</tr>
+						<!--<tr class="2017"></tr>-->
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Poland">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Poland1"  class="Poland" src="images/Poland.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Poland">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poland<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Poland.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Netherlands">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Amstelveen1" class="Amstelveen" src="images/Amstelveen.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Amstelveen">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Netherlands <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amstelveen <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Amstelveen.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div   class="image"><div class="Mexico">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Guadalajara1" class="Guadalajara" src="images/Guadalajara.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Guadalajara">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mexico <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Guadalajara  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Guadalajara.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Italy">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Milan1" class="Milan" src="images/Milan.jpg" alt="pic4" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Milan">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Italy<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Milan <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Milan.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Ahmedabad1" class="Ahmedabad" src="images/Ahmedabad.jpg" alt="01_dv512033" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Ahmedabad">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ahmedabad<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Ahmedabad.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Finland">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Espoo1" class="Espoo" src="images/Espoo.jpg" alt="01_dv512033-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Espoo">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Finland<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Espoo <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Espoo.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Shanghai1" class="Shanghai" src="images/Shanghai.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Shanghai">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; China <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shanghai<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Shanghai.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Canada">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="SaintLaurent1" class="SaintLaurent"  src="images/SaintLaurent.jpg" alt="02_AG000372-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="SaintLaurent">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Canada <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Saint Laurent<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/SaintLaurent.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+				</tr>
+
+   <!-----------------------------------------Start of T 5------------------------------------------------------->
+   
+   <tr class="2015" style="display:block;">
+					<td style="width: 39px">
+					<table border="0" class="December" id="December2015" style="display:block;">
+						<tbody class="December2017Boulder" id="DecemberBoulder0">
+							<tr><!-- class="2017"-->
+								<td colspan="5"><center style="font-size:large">
+								December 25, 2015</center></td>
+							</tr>
+						<!--<tr class="2017"></tr>-->
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Taiwan">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Kaohsiung1"  class="Kaohsiung" src="images/Kaohsiung.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Kaohsiung">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taiwan<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kaohsiung <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Kaohsiung.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Kolkata1" class="Kolkata" src="images/Kolkata.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Kolkata">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kolkata <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Kolkata.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div   class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Cary1" class="Cary" src="images/Cary.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Cary">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cary <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Cary.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Italy">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Leini1" class="Leini" src="images/Leini.jpg" alt="pic4" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Leini">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Italy<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leini <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Leini.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="France">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="LesUlis1" class="LesUlis" src="images/LesUlis.jpg" alt="01_dv512033" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="LesUlis">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;France <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Olympe/Les Ulis <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/LesUlis.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Lexington1" class="Lexington" src="images/Lexington.jpg" alt="01_dv512033-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Lexington">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lexington <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Lexington.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Madison1" class="Madison" src="images/Madison.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Madison">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Madison<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Madison.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Manesar1" class="Manesar"  src="images/Manesar.jpg" alt="02_AG000372-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Manesar">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Manesar <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Manesar.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+				</tr>
+
+   
+   <!---------------------------------------End of  Table 5----------------------------------------------------->
+    <!-----------------------------------------Start of T 5------------------------------------------------------->
+   
+   <tr class="2015" style="display:block;">
+					<td style="width: 39px">
+					<table border="0" class="July" id="July2015" style="display:block;">
+						<tbody class="December2017Boulder" id="DecemberBoulder0">
+							<tr><!-- class="2017"-->
+								<td colspan="5"><center style="font-size:large">
+								July 25, 2015</center></td>
+							</tr>
+						<!--<tr class="2017"></tr>-->
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Netherlands">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Middelburg1"  class="Middelburg" src="images/Middelburg.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Middelburg">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Netherlands<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Middelburg <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Middelburg.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Switzerland">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Morges1" class="Morges" src="images/Morges.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Morges">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Switzerland <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morges <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Morges.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div   class="image"><div class="Russia">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Moscow1" class="Moscow" src="images/Moscow.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Moscow">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Russia <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Moscow <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/DSC_0034.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Australia">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Mulgrave1" class="Mulgrave" src="images/Mulgrave.jpg" alt="pic4" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Mulgrave">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Australia<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mulgrave <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Mulgrave.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Mumbai1" class="Mumbai" src="images/Mumbai.jpg" alt="01_dv512033" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Mumbai">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mumbai <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Mumbai.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Germany">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Munich1" class="Munich" src="images/Munich.jpg" alt="01_dv512033-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Munich">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Germany <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Munich <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Munich.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Chaina">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Nanjing1" class="Nanjing" src="images/Nanjing.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Nanjing">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chaina <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nanjing<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Nanjing.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Newport1" class="Newport"  src="images/Newport.jpg" alt="02_AG000372-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Newport">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Newport <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Newport.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+				</tr>
+
+   
+   <!---------------------------------------End of  Table 5----------------------------------------------------->
+    <!-----------------------------------------Start of T 5------------------------------------------------------->
+   
+   <tr class="2015" style="display:block;">
+					<td style="width: 39px">
+					<table border="0" class="January" id="January2015" style="display:block;">
+						<tbody class="December2017Boulder" id="DecemberBoulder0">
+							<tr><!-- class="2017"-->
+								<td colspan="5"><center style="font-size:large">
+								January 25, 2015</center></td>
+							</tr>
+						<!--<tr class="2017"></tr>-->
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Japan">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Osaka1"  class="Osaka" src="images/Osaka.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Osaka">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japan<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Osaka <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Osaka.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Malaysia">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Penang1" class="Penang" src="images/Penang.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Penang">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Malaysia <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Penang <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Penang.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div   class="image"><div class="Poland">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Poland1" class="Poland" src="images/Poland.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Poland">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poland <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Poland.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Qingdao1" class="Qingdao" src="images/Qingdao.jpg" alt="pic4" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Qingdao">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; China<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qingdao<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Qingdao.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Germany">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Ratingen1" class="Ratingen" src="images/Ratingen.jpg" alt="01_dv512033" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Ratingen ">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Germany <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ratingen  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Ratingen.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Italy">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Rome1" class="Rome" src="images/Rome.jpg" alt="01_dv512033-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Rome">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Italy <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rome <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Rome.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Schaumburg1" class="Schaumburg" src="images/Schaumburg.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Schaumburg">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Schaumburg<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Schaumburg.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Korea">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Seoul1" class="Seoul"  src="images/Seoul.jpg" alt="02_AG000372-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Seoul">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Korea <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seoul <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Seoul.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+				</tr>
+
+   
+   <!---------------------------------------End of  Table 5----------------------------------------------------->
+ <!-----------------------------------------Start of T 5------------------------------------------------------->
+   
+   <tr class="2017" style="display:block;">
+					<td style="width: 39px">
+					<table border="0" class="July" id="July2017" style="display:block;">
+						<tbody class="December2017Boulder" id="DecemberBoulder0">
+							<tr><!-- class="2017"-->
+								<td colspan="5"><center style="font-size:large">
+								July 25, 2017</center></td>
+							</tr>
+						<!--<tr class="2017"></tr>-->
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Shenyang1"  class="Shenyang" src="images/Shenyang.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Shenyang">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shenyang <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Shenyang.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Shenzhen1 " class="Shenzhen " src="images/Shenzhen.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Shenzhen ">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; China <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shenzhen  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Shenzhen.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div   class="image"><div class="Japan">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Shibaura1" class="Shibaura" src="images/Shibaura.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Shibaura">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japan <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shibaura <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Shibaura.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="ColoradoSprings1" class="ColoradoSprings" src="images/ColoradoSprings.jpg" alt="pic4" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="ColoradoSprings">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colorado Springs  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/ColoradoSprings.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Sweden">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Kista1" class="Kista" src="images/Kista.jpg" alt="01_dv512033" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Kista">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sweden<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kista  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Kista.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Australia">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Sydney1" class="Sydney" src="images/Sydney.jpg" alt="01_dv512033-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Sydney">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Australia <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sydney <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Sydney.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Taiwan">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Taipei1" class="Taipei" src="images/Taipei.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Taipei">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Taiwan <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Taipei<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Taipei.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="France">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Vennissieux1" class="Vennissieux"  src="images/Vennissieux.jpg" alt="02_AG000372-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Vennissieux">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; France <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vennissieux <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Vennissieux.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+				</tr>
+
+   
+   <!---------------------------------------End of  Table 5----------------------------------------------------->
+ <!-----------------------------------------Start of T 5------------------------------------------------------->
+   
+   <tr class="2016" style="display:block;">
+					<td style="width: 39px">
+					<table border="0" class="July" id="July2016" style="display:block;">
+						<tbody class="December2017Boulder" id="DecemberBoulder0">
+							<tr><!-- class="2017"-->
+								<td colspan="5"><center style="font-size:large">
+								July 25, 2016</center></td>
+							</tr>
+						<!--<tr class="2017"></tr>-->
+						<!--------------------------------------row 1 code--------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Wakefield1"  class="Wakefield" src="images/Wakefield.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Wakefield">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wakefield <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_1.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(5 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Wakefield.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div>
+								</div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="Germany">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Waldbronn1" class="Waldbronn " src="images/Waldbronn.jpg" alt="pic1" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Waldbronn ">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Germany <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Waldbronn  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_2.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Waldbronn.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(622KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div   class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="WoodDale1" class="WoodDale" src="images/WoodDale.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="WoodDale">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wood Dale  <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_3.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/WoodDale.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(361KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Wuhan1" class="Wuhan" src="images/Wuhan.jpg" alt="pic4" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Wuhan">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wuhan <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_4.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Wuhan.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(1090KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+						<!-----------------------End OF Row One---------------------------------------------->
+					<!-----------------------Start OF Row TWO---------------------------------------------->
+							<tr>
+						<!--------------------------------------pic 1 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="China">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Xian1" class="Xian" src="images/Xian.jpg" alt="01_dv512033" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Xian">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;China <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xi'an <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_5.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Xian.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(432KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+						<!--------------------------------------pic 2 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="United Kingdom">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Yarnton1" class="Yarnton" src="images/Yarnton.jpg" alt="01_dv512033-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Yarnton">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; United Kingdom <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yarnton <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_6.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Yarnton.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(452KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+						<!--------------------------------------pic 3 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="US">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Alpharetta1" class="Alpharetta" src="images/Alpharetta.jpg" alt="pic3" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Alpharetta">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; US <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alpharetta<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_7.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Alpharetta.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(2,189KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+							
+						<!--------------------------------------pic 4 code--------------------->
+								<td class="imgtd" align="center" style="border-width:1; border-color:gray">
+								<br><div  class="image"><div class="India">
+								&nbsp;&nbsp;&nbsp; <center>
+								<img id="Manesar1" class="Manesar"  src="images/Manesar.jpg" alt="02_AG000372-C.jpg" width="115" height="80">
+								</center><br>
+								<table width="160">
+									<tr class="Manesar">
+										<td style="font-size:10pt; text-align:left;margin-left:0px;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Manesar <br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Agilent_8.Site Info" style="font-size:10pt">Site Info</a>
+										<span style="font-size:8pt">(8 Bytes)</span>
+										<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wps.service.agilent.com:81/photo_Rep/images/Manesar.jpg" style="font-size:10pt"> 
+										Hi-Res-Pic</a> <span style="font-size:8pt">
+										(390KB)</span> <br>
+										</td>
+									</tr>
+								</table>
+								</div></div>
+								</td>
+
+						<!--------------------------------------------------------------------->
+	
+							</tr>
+
+					
+					
+					<!----------------------------End Of Row TWO--------------------------------------------------------->
+					</table>
+					</td>
+				</tr>
+
+   
+   <!---------------------------------------End of  Table 5----------------------------------------------------->
+ 
+
+			</table>
+
+	</div> <!-- MyGallaryDiv end -->
+	</div> 
+	
+		<!--</div>
+		 Content Div End -->
+		<!--<div id="footerDiv">
+						<a href="#"><img src="images/arrow-151-xxl.png" align="right" alt="GoUp"></a>
+		</div> -->
+	</div>
+	<div class="load-gif" style="display:none;">
+		<img src="/photo_Rep/images/load.gif" >
+	</div>
+	
+</body>
+<script>
+		var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+
+function getthedate(){
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var hours=mydate.getHours()
+var minutes=mydate.getMinutes()
+var seconds=mydate.getSeconds()
+var dn="am"
+if (hours>=12)
+dn="pm"
+if (hours>12){
+hours=hours-12
+}
+if (hours==0)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+//change font size here
+var cdate=""+montharray[month]+" "+daym+", "+year+" "+hours+":"+minutes+""+dn
++""
+if (document.all)
+document.all.clock.innerHTML=cdate
+else if (document.getElementById)
+document.getElementById("clock").innerHTML=cdate
+else
+document.write(cdate)
+}
+if (!document.all&&!document.getElementById)
+getthedate()
+function datetime(){
+if (document.all||document.getElementById)
+setInterval("getthedate()",1000)
+}
+
+
+</script>
+
+</html>
+
